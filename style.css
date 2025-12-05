@@ -1,0 +1,1027 @@
+/* ========================================
+   RESET & GLOBAL STYLES
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  color: #2d2d2d;
+  background: #f5f5f5;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('Images/earthquake2.jpg') center/cover no-repeat fixed;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* ========================================
+   HEADER & NAVIGATION
+   ======================================== */
+.header {
+  padding: 15px 60px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.brand {
+  float: left;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+  background: linear-gradient(135deg, #8B4513, #D2691E);
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+}
+
+.brand-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+/* Navigation for Page 2 (Earthquake page) */
+.header nav {
+  float: right;
+}
+
+.header nav ul {
+  list-style: none;
+}
+
+.header nav ul li {
+  float: left;
+  margin-left: 35px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+  line-height: 35px;
+  display: block;
+}
+
+.header nav ul li a:hover,
+.header nav ul li a.active {
+  color: #8B4513;
+}
+
+/* Navigation for Pages 1, 3, 5 (Top nav bar) */
+nav {
+  width: 100%;
+  padding: 18px 0;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 20px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #8B4513;
+}
+
+/* Navigation for Page 4 */
+header {
+  background: white;
+  padding: 20px 40px;
+  overflow: hidden;
+}
+
+header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  float: left;
+}
+
+header nav {
+  float: right;
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: auto;
+}
+
+header nav a {
+  margin: 0 15px;
+}
+
+/* ========================================
+   BREADCRUMB STYLES
+   ======================================== */
+.breadcrumb-wrap {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 12px 30px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+  clear: both;
+}
+
+.breadcrumb {
+  text-align: center;
+}
+
+/* Bubble style breadcrumb for Page 5 */
+.bubble {
+  background: white;
+  width: fit-content;
+  padding: 10px 30px;
+  margin: 20px auto;
+  border-radius: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ========================================
+   HERO SECTIONS
+   ======================================== */
+/* Hero for Page 1 */
+.hero {
+  background-image: url("index1.jpg") center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 70px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.hero h3 {
+  margin-top: -10px;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+/* Hero for Page 4 */
+.hero p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Header styles for Page 3 & Page 5 */
+.header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Title sections for Page 2 (Earthquake) */
+#e-title1-div {
+  min-height: 100vh;
+  text-align: center;
+  padding: 250px 20px;
+}
+
+#e-title1 {
+  font-size: 58px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
+}
+
+#e-title1-div h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  max-width: 700px;
+  line-height: 1.6;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  margin: 0 auto 40px;
+}
+
+#e-title2-div,
+#e-title3-div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#e-title2,
+#e-title3 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* ========================================
+   CARD & BOX STYLES
+   ======================================== */
+/* Center box for Page 1 */
+.center-box {
+  background: rgba(255, 255, 255, 0.9);
+  width: 70%;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+  color: black;
+}
+
+/* Content box for Pages 3 & 5 */
+.content-box,
+.section-box {
+  background: rgba(255, 255, 255, 0.9);
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.section-box h2 {
+  margin-top: 0;
+}
+
+/* Mission & Vision boxes - Page 1 */
+.mv-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.mv-box {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+/* Generic card styles */
+.card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 20px;
+}
+
+.card p {
+  line-height: 1.7;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Cards container */
+.cards {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Earthquake page cards - Section 1 */
+#e-cards-section1 {
+  min-height: 60vh;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+#ec1-card1,
+#ec1-card2 {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 500px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  text-align: left;
+}
+
+#ec1-card1 h3,
+#ec1-card2 h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#ec1-card2 {
+  background-color: rgba(255, 237, 204, 0.95);
+  border: 2px solid #D2691E;
+}
+
+#ec1-card2 h3 {
+  color: #8B4513;
+}
+
+#ec1-card1 p,
+#ec1-card2 p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Earthquake page cards - Section 2 */
+#e-cards-section2 {
+  min-height: 100vh;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+#ec2-card1,
+#ec2-card2,
+#ec2-card3 {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 35px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+#ec2-card1 h3,
+#ec2-card2 h3,
+#ec2-card3 h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#ec2-card1 p,
+#ec2-card2 p,
+#ec2-card3 p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Earthquake page cards - Section 3, 4, 5 */
+#e-cards-section3,
+#e-cards-section4,
+#e-cards-section5 {
+  min-height: 80vh;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+#e-cards-section3 {
+  min-height: 100vh;
+}
+
+#ec3-card1,
+#ec3-card2,
+#ec4-card1,
+#ec4-card2,
+#ec5-card1,
+#ec5-card2 {
+  padding: 35px 40px;
+  border-radius: 15px;
+  max-width: 450px;
+  margin: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+
+#ec3-card1,
+#ec3-card2 {
+  background-color: rgba(255, 248, 230, 0.95);
+}
+
+#ec4-card1,
+#ec4-card2 {
+  background-color: rgba(245, 235, 220, 0.95);
+}
+
+#ec5-card1,
+#ec5-card2 {
+  background-color: rgba(255, 248, 230, 0.95);
+}
+
+#ec3-card1 h4,
+#ec3-card2 h4,
+#ec4-card1 h4,
+#ec4-card2 h4,
+#ec5-card1 h4,
+#ec5-card2 h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+#ec3-card1 ol,
+#ec3-card2 ol,
+#ec4-card1 ol,
+#ec4-card2 ol,
+#ec5-card1 ol,
+#ec5-card2 ol {
+  margin-left: 20px;
+}
+
+#ec3-card1 ol li,
+#ec3-card2 ol li,
+#ec4-card1 ol li,
+#ec4-card2 ol li,
+#ec5-card1 ol li,
+#ec5-card2 ol li {
+  font-size: 14px;
+  line-height: 2;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Earthquake page - Section 6 (Emergency Kit) */
+#e-cards-section6 {
+  min-height: 100vh;
+  padding: 150px 60px 80px;
+  text-align: center;
+}
+
+#e-cards-section6::before {
+  content: 'Essential Emergency Kit Items';
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+  display: block;
+  margin-bottom: 50px;
+}
+
+.ec6-table1 {
+  background-color: rgba(255, 248, 230, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.ec6-table1 tr td {
+  padding: 20px;
+  vertical-align: top;
+  width: 50%;
+}
+
+.ec6-table1 ul {
+  list-style: none;
+}
+
+.ec6-table1 ul li {
+  font-size: 15px;
+  line-height: 2.2;
+  color: #555;
+  padding: 8px 0;
+  font-weight: 500;
+}
+
+.ec6-table1 tr td:first-child ul li {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Offer cards - Page 1 */
+.offer-section {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.offer-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.offer-cards {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.offer-card {
+  background: #fafafa;
+  width: 260px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Why section - Page 1 */
+.why-section {
+  padding: 60px 20px;
+  background-image: url("index1.jpg") center/cover no-repeat;
+  text-align: center;
+}
+
+.why-section h1 {
+  font-size: 40px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.why-cards {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.why-card {
+  background: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+.why-bottom-box {
+  background: white;
+  width: 70%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* TCWS cards - Page 3 */
+.tcws-grid {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tcws-card {
+  width: 240px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+  text-align: left;
+}
+
+.tcws-number {
+  font-size: 26px;
+  font-weight: bold;
+  background: #f0f0f0;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+
+/* Flood causes - Page 3 */
+.causes-grid {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cause-box {
+  width: 260px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+/* Safety section - Page 3 */
+.safety-section {
+  background-image: url("storms1.jpg") center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.safety-section h1 {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.safety-grid {
+  text-align: center;
+}
+
+.safety-box {
+  background: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+.safety-box ol {
+  margin-left: 20px;
+}
+
+.safety-box li {
+  margin-bottom: 8px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* Items section - Page 3 */
+.items-section {
+  background-image: url("storms1.jpg")center/cover no-repeat;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.items-section h1 {
+  font-size: 42px;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.items-box {
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.items-box ul {
+  text-align: left;
+  line-height: 1.8;
+  margin-left: 40px;
+}
+
+/* Section styles - Page 4 */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+}
+
+/* Page 5 specific styles */
+.title-box {
+  font-size: 48px;
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid white;
+  padding: 20px 40px;
+  margin: 30px auto;
+  color: black;
+  background: white;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+.purpose-grid {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.purpose {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+  font-size: 17px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px;
+}
+
+.members-title {
+  font-size: 48px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 40px auto 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.member-card {
+  width: 90%;
+  max-width: 900px;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 25px auto;
+  overflow: hidden;
+}
+
+.member-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 6px solid white;
+  float: right;
+  margin-left: 30px;
+}
+
+.member-card:nth-child(even) img {
+  float: left;
+  margin-right: 30px;
+  margin-left: 0;
+}
+
+.member-text {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.blue-card {
+  background: #c9e6ff;
+}
+
+.pink-card {
+  background: #eac6d6;
+}
+
+.purple-card {
+  background: linear-gradient(to right, #cfa6ff, #b07cff);
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn-row {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background: white;
+  padding: 12px 28px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #bbb;
+  display: inline-block;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.weather-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.weather-btn:hover {
+  background: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   FOOTER STYLES
+   ======================================== */
+footer {
+  background: linear-gradient(to right, #0f4d3c, #102a56);
+  color: white;
+  padding: 50px 30px;
+  margin-top: 80px;
+  clear: both;
+  text-align: left;
+}
+
+footer div {
+  width: 220px;
+  margin: 10px 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer h2,
+footer h3,
+footer h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+footer p,
+footer a {
+  font-size: 14px;
+  color: white;
+  line-height: 1.8;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #D2691E;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+/* Footer for Page 2 (Earthquake page) */
+.footer-table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.footer-table tr th {
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 33%;
+}
+
+.footer-soteria {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.footer-table tr td {
+  vertical-align: top;
+  padding-right: 40px;
+  width: 33%;
+}
+
+.footer-table tr td p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.footer-table tr td ul {
+  list-style: none;
+}
+
+.footer-table tr td ul li {
+  margin-bottom: 10px;
+}
+
+.footer-table tr td ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-table tr td ul li a:hover {
+  color: #D2691E;
+}
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 30px 0 20px;
+  clear: both;
+}
+
+footer > p {
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 20px;
+}
+
+/* ========================================
+   RESPONSIVE & FIXES
+   ======================================== */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .brand,
+  .header nav {
+    float: none;
+    text-align: center;
+  }
+
+  .header nav ul li {
+    float: none;
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .center-box,
+  .content-box,
+  .section-box,
+  .why-bottom-box,
+  .items-box {
+    width: 90%;
+  }
+
+  .member-card img {
+    float: none !important;
+    display: block;
+    margin: 0 auto 15px !important;
+  }
+
+  .member-card:nth-child(even) img {
+    float: none !important;
+  }
+}
