@@ -1,0 +1,1 @@
+take note that the file paths or images may not work if you use the files OUTSIDE the zip file, since they had a file hierarchy before that. since i did everything on a tablet, however, it was not possible for me to drag folders, only files. therefore, i had to dissolve the file hierarchy. please excuse such a draaback.
